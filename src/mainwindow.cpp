@@ -56,7 +56,8 @@ void MainWindow::on_nextBtn_clicked()
     player->play();
     // 更新歌词
     lyricPage->loadLyric(sourceUrl.toLocalFile()); // 加载对应歌词
-
+    // 更新封面图
+    setCover(sourceUrl.toLocalFile());
 }
 
 void MainWindow::on_previousBtn_clicked()
@@ -88,6 +89,8 @@ void MainWindow::on_previousBtn_clicked()
     player->play();
     // 更新歌词
     lyricPage->loadLyric(sourceUrl.toLocalFile()); // 加载对应歌词
+    // 更新封面图
+    setCover(sourceUrl.toLocalFile());
 }
 //——————————————————————————————————————————
 
@@ -101,6 +104,8 @@ void MainWindow::on_playBtn_clicked()
         player->play();
         if(defaultState) {
             lyricPage->loadLyric(player->source().toLocalFile()); // 恢复歌词
+            // 更新封面图
+            setCover(player->source().toLocalFile());
             defaultState = false; // 重置默认状态
         }
         ui->playBtn->setText("暂停");
@@ -199,6 +204,8 @@ void MainWindow::on_listWidget_doubleClicked(const QModelIndex &index){
             ui->playBtn->setText("暂停");
             // 更新歌词
             lyricPage->loadLyric(sourceUrl.toLocalFile()); // 加载对应歌词
+            // 更新封面图
+            setCover(sourceUrl.toLocalFile());
         }
     }
 }
@@ -221,10 +228,6 @@ void MainWindow::on_loopBtn_clicked()
             break;
     }
 }
-
-//———————————————————————————————————
-
-
 
 MainWindow::~MainWindow()
 {

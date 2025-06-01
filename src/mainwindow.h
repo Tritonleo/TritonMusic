@@ -8,6 +8,16 @@
 #include <QFileDialog>
 #include <QTextStream>
 #include <QTextBrowser>
+#include <QImage>
+#include "tag.h"
+#include "fileref.h"
+#include "mpegfile.h"
+#include "flacfile.h"
+#include "id3v2tag.h"
+#include "id3v2frame.h"
+#include "id3v2.h"
+#include "attachedpictureframe.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -62,6 +72,8 @@ private slots:
     void do_sliderPositionChanged(qint64 position);
     void do_durationChanged(qint64 duration);
     void do_stateChanged(QMediaPlayer::PlaybackState state);
+    
+    void setCover(const QString& filePath);
 
     void goDefaultState();
 };

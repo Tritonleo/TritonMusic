@@ -1,6 +1,36 @@
 C:/Users/25764/Desktop/TritonMusic/build/TritonMusic_autogen/UVLADIE3JM/moc_mainwindow.cpp: C:/Users/25764/Desktop/TritonMusic/src/mainwindow.h \
   C:/Users/25764/Desktop/TritonMusic/build/TritonMusic_autogen/moc_predefs.h \
   C:/Users/25764/Desktop/TritonMusic/src/lyricpage.h \
+  C:/msys64/mingw64/include/taglib/attachedpictureframe.h \
+  C:/msys64/mingw64/include/taglib/audioproperties.h \
+  C:/msys64/mingw64/include/taglib/fileref.h \
+  C:/msys64/mingw64/include/taglib/flacfile.h \
+  C:/msys64/mingw64/include/taglib/flacmetadatablock.h \
+  C:/msys64/mingw64/include/taglib/flacpicture.h \
+  C:/msys64/mingw64/include/taglib/flacproperties.h \
+  C:/msys64/mingw64/include/taglib/id3v2.h \
+  C:/msys64/mingw64/include/taglib/id3v2frame.h \
+  C:/msys64/mingw64/include/taglib/id3v2framefactory.h \
+  C:/msys64/mingw64/include/taglib/id3v2header.h \
+  C:/msys64/mingw64/include/taglib/id3v2tag.h \
+  C:/msys64/mingw64/include/taglib/mpegfile.h \
+  C:/msys64/mingw64/include/taglib/mpegheader.h \
+  C:/msys64/mingw64/include/taglib/mpegproperties.h \
+  C:/msys64/mingw64/include/taglib/tag.h \
+  C:/msys64/mingw64/include/taglib/taglib.h \
+  C:/msys64/mingw64/include/taglib/taglib_export.h \
+  C:/msys64/mingw64/include/taglib/tbytevector.h \
+  C:/msys64/mingw64/include/taglib/tbytevectorlist.h \
+  C:/msys64/mingw64/include/taglib/tfile.h \
+  C:/msys64/mingw64/include/taglib/tiostream.h \
+  C:/msys64/mingw64/include/taglib/tlist.h \
+  C:/msys64/mingw64/include/taglib/tlist.tcc \
+  C:/msys64/mingw64/include/taglib/tmap.h \
+  C:/msys64/mingw64/include/taglib/tmap.tcc \
+  C:/msys64/mingw64/include/taglib/tpicturetype.h \
+  C:/msys64/mingw64/include/taglib/tstring.h \
+  C:/msys64/mingw64/include/taglib/tstringlist.h \
+  C:/msys64/mingw64/include/taglib/tvariant.h \
   D:/Qt/6.8.3/mingw_64/include/QtCore/QByteArray \
   D:/Qt/6.8.3/mingw_64/include/QtCore/QCryptographicHash \
   D:/Qt/6.8.3/mingw_64/include/QtCore/QDeadlineTimer \
@@ -290,6 +320,7 @@ C:/Users/25764/Desktop/TritonMusic/build/TritonMusic_autogen/UVLADIE3JM/moc_main
   D:/Qt/6.8.3/mingw_64/include/QtCore/qxpfunctional.h \
   D:/Qt/6.8.3/mingw_64/include/QtCore/qxptype_traits.h \
   D:/Qt/6.8.3/mingw_64/include/QtCore/qyieldcpu.h \
+  D:/Qt/6.8.3/mingw_64/include/QtGui/QImage \
   D:/Qt/6.8.3/mingw_64/include/QtGui/QPaintDevice \
   D:/Qt/6.8.3/mingw_64/include/QtGui/QPaintDeviceWindow \
   D:/Qt/6.8.3/mingw_64/include/QtGui/QSurfaceFormat \

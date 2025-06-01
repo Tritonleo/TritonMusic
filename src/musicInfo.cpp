@@ -40,7 +40,8 @@ void MainWindow::on_addFileBtn_clicked()
         ui->playBtn->setText("暂停");
         // 添加歌词
         lyricPage->loadLyric(sourceUrl.toLocalFile()); // 加载对应歌词
-        // 播放音频
+        //添加图标
+        setCover(sourceUrl.toLocalFile()); // 设置封面图
         player->play();
     }
 }
@@ -98,6 +99,8 @@ void MainWindow::do_stateChanged(QMediaPlayer::PlaybackState state)
             player->play();
             // 更新歌词
             lyricPage->loadLyric(sourceUrl.toLocalFile()); // 加载对应歌词
+            // 更新封面图
+            setCover(sourceUrl.toLocalFile()); // 设置封面图
             break;
         }
         case LoopNone: { 
@@ -110,6 +113,8 @@ void MainWindow::do_stateChanged(QMediaPlayer::PlaybackState state)
                 player->play();
                 // 更新歌词
                 lyricPage->loadLyric(sourceUrl.toLocalFile()); // 加载对应歌词
+                // 更新封面图
+                setCover(sourceUrl.toLocalFile()); // 设置封面图
             } else {
                 // 如果是最后一首，回到默认状态
                 goDefaultState();
@@ -139,7 +144,6 @@ void MainWindow::do_sliderPositionChanged(qint64 position)
 
 void MainWindow::goDefaultState()
 {
-    m_isUesrAction=true;
     if(ui->listWidget->count() == 0) {
         player->stop(); // 停止播放器
         ui->playBtn->setText("播放");
@@ -156,6 +160,7 @@ void MainWindow::goDefaultState()
         return;
     }; 
     // 重置播放器状态和界面
+    m_isUesrAction = true; // 重置用户操作标志
     ui->listWidget->setCurrentRow(0);
     playingRow=ui->listWidget->currentRow();
     QUrl sourceUrl = getUrlFromItem(ui->listWidget->currentItem());
@@ -168,4 +173,45 @@ void MainWindow::goDefaultState()
     lyricPage->clearLyrics(); // 清除当前歌词显示]
     defaultState = true; // 设置默认状态标志
     m_isUesrAction = false; // 重置用户操作标志
+}
+
+void MainWindow::setCover(const QString& filePath) {
+    QImage coverImage;
+    TagLib::FileRef fref(filePath.toLocal8Bit().constData());
+    if (fref.isNull())  return;
+
+    // 处理MP3
+    if (filePath.endsWith(".mp3", Qt::CaseInsensitive)) {
+        TagLib::MPEG::File* mp3 = dynamic_cast<TagLib::MPEG::File*>(fref.file());
+        if (mp3 && mp3->ID3v2Tag()) {
+            auto apicFrames = mp3->ID3v2Tag()->frameList("APIC");
+            if (!apicFrames.isEmpty()) {
+                auto apicFrame = dynamic_cast<TagLib::ID3v2::AttachedPictureFrame*>(apicFrames.front());
+                if (apicFrame) {
+                    QByteArray data(apicFrame->picture().data(), apicFrame->picture().size());
+                    coverImage.loadFromData(data);
+                    ui->imageLabel->setPixmap(QPixmap::fromImage(coverImage));
+                    ui->imageLabel->setScaledContents(true);
+                    ui->imageLabel->show();
+                    return; // 找到封面图后直接返回 
+                }
+            }
+        }
+    }
+    // 处理FLAC
+    else if (filePath.endsWith(".flac", Qt::CaseInsensitive)) {
+        TagLib::FLAC::File* flac = dynamic_cast<TagLib::FLAC::File*>(fref.file());
+        if (flac) {
+            auto pics = flac->pictureList();
+            if (!pics.isEmpty()) {
+                auto pic = pics.front();
+                QByteArray data(pic->data().data(), pic->data().size());
+                coverImage.loadFromData(data);
+                ui->imageLabel->setPixmap(QPixmap::fromImage(coverImage));
+                ui->imageLabel->setScaledContents(true);
+                ui->imageLabel->show();
+                return; // 找到封面图后直接返回
+            }
+        }
+    }
 }

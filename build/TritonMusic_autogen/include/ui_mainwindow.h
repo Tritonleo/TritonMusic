@@ -39,6 +39,7 @@ public:
     QPushButton *previousBtn;
     QPushButton *nextBtn;
     LyricPage *lyricDisplayWidget;
+    QLabel *imageLabel;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -53,13 +54,13 @@ public:
         listWidget->setGeometry(QRect(390, 70, 231, 181));
         addFileBtn = new QPushButton(centralwidget);
         addFileBtn->setObjectName("addFileBtn");
-        addFileBtn->setGeometry(QRect(400, 280, 75, 24));
+        addFileBtn->setGeometry(QRect(390, 280, 75, 24));
         clearBtn = new QPushButton(centralwidget);
         clearBtn->setObjectName("clearBtn");
-        clearBtn->setGeometry(QRect(500, 280, 75, 24));
+        clearBtn->setGeometry(QRect(470, 280, 75, 24));
         playBtn = new QPushButton(centralwidget);
         playBtn->setObjectName("playBtn");
-        playBtn->setGeometry(QRect(240, 320, 75, 24));
+        playBtn->setGeometry(QRect(230, 320, 75, 24));
         sliderVolume = new QSlider(centralwidget);
         sliderVolume->setObjectName("sliderVolume");
         sliderVolume->setGeometry(QRect(360, 90, 16, 160));
@@ -79,22 +80,25 @@ public:
         soundBtn->setGeometry(QRect(350, 280, 31, 21));
         removeBtn = new QPushButton(centralwidget);
         removeBtn->setObjectName("removeBtn");
-        removeBtn->setGeometry(QRect(400, 320, 75, 24));
+        removeBtn->setGeometry(QRect(380, 320, 75, 24));
         loopBtn = new QPushButton(centralwidget);
         loopBtn->setObjectName("loopBtn");
-        loopBtn->setGeometry(QRect(80, 320, 75, 24));
+        loopBtn->setGeometry(QRect(70, 320, 75, 24));
         timeLabel = new QLabel(centralwidget);
         timeLabel->setObjectName("timeLabel");
         timeLabel->setGeometry(QRect(260, 280, 101, 20));
         previousBtn = new QPushButton(centralwidget);
         previousBtn->setObjectName("previousBtn");
-        previousBtn->setGeometry(QRect(160, 320, 75, 24));
+        previousBtn->setGeometry(QRect(150, 320, 75, 24));
         nextBtn = new QPushButton(centralwidget);
         nextBtn->setObjectName("nextBtn");
-        nextBtn->setGeometry(QRect(320, 320, 75, 24));
+        nextBtn->setGeometry(QRect(300, 320, 75, 24));
         lyricDisplayWidget = new LyricPage(centralwidget);
         lyricDisplayWidget->setObjectName("lyricDisplayWidget");
         lyricDisplayWidget->setGeometry(QRect(80, 80, 261, 181));
+        imageLabel = new QLabel(centralwidget);
+        imageLabel->setObjectName("imageLabel");
+        imageLabel->setGeometry(QRect(550, 280, 71, 61));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -117,6 +121,7 @@ public:
         timeLabel->setText(QCoreApplication::translate("MainWindow", "00\357\274\23200/00:00", nullptr));
         previousBtn->setText(QCoreApplication::translate("MainWindow", "\344\270\212\344\270\200\351\246\226", nullptr));
         nextBtn->setText(QCoreApplication::translate("MainWindow", "\344\270\213\344\270\200\351\246\226", nullptr));
+        imageLabel->setText(QString());
     } // retranslateUi
 
 };
