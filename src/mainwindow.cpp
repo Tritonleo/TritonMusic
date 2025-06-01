@@ -6,9 +6,13 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setWindowTitle("Triton Music Player");
+    setWindowIcon(QIcon("../images/icon.jpg"));
+    ui->listWidget->setIconSize(QSize(90, 90)); // 设置列表图标大小
     
     ui->listWidget->setDragEnabled(true);
     ui->listWidget->setDragDropMode(QAbstractItemView::InternalMove);
+    
 
     player = new QMediaPlayer(this);
     QAudioOutput *audioOutput = new QAudioOutput(this);

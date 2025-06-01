@@ -1304,7 +1304,5 @@ C:/Users/25764/Desktop/TritonMusic/src/lyricpage.cpp
 C:/Users/25764/Desktop/TritonMusic/src/musicInfo.cpp
  uic:ui_mainwindow.h
 C:/Users/25764/Desktop/TritonMusic/src/main.cpp
-C:/Users/25764/Desktop/TritonMusic/src/musicIcon.h
 C:/Users/25764/Desktop/TritonMusic/src/mainwindow.cpp
  uic:ui_mainwindow.h
-C:/Users/25764/Desktop/TritonMusic/src/musicIcon.cpp
