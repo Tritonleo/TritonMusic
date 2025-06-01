@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-0020552ac9bfd752fd66.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TritonMusic",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TritonMusic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TritonMusic-Debug-095df4e74f06a4041096.json",
+					"name" : "TritonMusic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TritonMusic_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TritonMusic_autogen-Debug-f0104a812d9674782cd6.json",
+					"name" : "TritonMusic_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TritonMusic_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TritonMusic_autogen_timestamp_deps-Debug-4728c22c53d9bec3a8f0.json",
+					"name" : "TritonMusic_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/25764/Desktop/TritonMusic/build",
+		"source" : "C:/Users/25764/Desktop/TritonMusic"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

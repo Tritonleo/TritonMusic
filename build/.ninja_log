@@ -1,0 +1,10 @@
+# ninja log v6
+8	126	7704544518077891	TritonMusic_autogen/timestamp	b6b21558d17ca89c
+8	126	7704544518077891	TritonMusic_autogen/mocs_compilation.cpp	b6b21558d17ca89c
+8	126	7704544518077891	C:/Users/25764/Desktop/TritonMusic/build/TritonMusic_autogen/timestamp	b6b21558d17ca89c
+8	126	7704544518077891	C:/Users/25764/Desktop/TritonMusic/build/TritonMusic_autogen/mocs_compilation.cpp	b6b21558d17ca89c
+25289	29172	7704542131713248	CMakeFiles/TritonMusic.dir/src/main.cpp.obj	45dd479e55a839ae
+127	3519	7704544519287513	CMakeFiles/TritonMusic.dir/src/mainwindow.cpp.obj	a0008746f77045f1
+3519	3807	7704544553170410	TritonMusic.exe	4e660f01a3f507
+25294	27212	7704542131795234	CMakeFiles/TritonMusic.dir/src/lyricpage.cpp.obj	5ac6e11a2d8635f
+25286	29276	7704542131713248	CMakeFiles/TritonMusic.dir/TritonMusic_autogen/mocs_compilation.cpp.obj	8408ddc7ca0f8d3d

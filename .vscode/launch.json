@@ -1,0 +1,43 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Qt Application with cppdbg",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${command:cmake.launchTargetPath}",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "visualizerFile": "c:\\Users\\25764\\AppData\\Roaming\\Trae\\User\\workspaceStorage\\dfcda4ef01ac0f3227905df397d966cc\\tonka3000.qtvsctools\\qt.natvis.xml",
+            "showDisplayString": true,
+            "linux": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/bin/gdb"
+            },
+            "osx": {
+                "MIMode": "lldb"
+            },
+            "windows": {
+                "environment": [
+                    {
+                        "name": "PATH",
+                        "value": "${env:PATH};${command:qt-cpp.qtDir}"
+                    },
+                    {
+                        "name": "QT_QPA_PLATFORM_PLUGIN_PATH",
+                        "value": "${command:qt-cpp.QT_QPA_PLATFORM_PLUGIN_PATH}"
+                    },
+                    {
+                        "name": "QML_IMPORT_PATH",
+                        "value": "${command:qt-cpp.QML_IMPORT_PATH}"
+                    }
+                ],
+                "MIMode": "gdb",
+                "miDebuggerPath": "${command:qt-cpp.minGWgdb}"
+            }
+        }
+    ]
+}

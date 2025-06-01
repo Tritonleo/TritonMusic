@@ -1,0 +1,9 @@
+C:/Users/25764/Desktop/TritonMusic/build/CMakeFiles/TritonMusic.dir
+C:/Users/25764/Desktop/TritonMusic/build/CMakeFiles/edit_cache.dir
+C:/Users/25764/Desktop/TritonMusic/build/CMakeFiles/rebuild_cache.dir
+C:/Users/25764/Desktop/TritonMusic/build/CMakeFiles/list_install_components.dir
+C:/Users/25764/Desktop/TritonMusic/build/CMakeFiles/install.dir
+C:/Users/25764/Desktop/TritonMusic/build/CMakeFiles/install/local.dir
+C:/Users/25764/Desktop/TritonMusic/build/CMakeFiles/install/strip.dir
+C:/Users/25764/Desktop/TritonMusic/build/CMakeFiles/TritonMusic_autogen_timestamp_deps.dir
+C:/Users/25764/Desktop/TritonMusic/build/CMakeFiles/TritonMusic_autogen.dir
