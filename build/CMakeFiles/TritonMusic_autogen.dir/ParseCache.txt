@@ -1270,6 +1270,8 @@ C:/Users/25764/Desktop/TritonMusic/src/mainwindow.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
 C:/Users/25764/Desktop/TritonMusic/src/lyricpage.cpp
+C:/Users/25764/Desktop/TritonMusic/src/musicInfo.cpp
+ uic:ui_mainwindow.h
 C:/Users/25764/Desktop/TritonMusic/src/main.cpp
 C:/Users/25764/Desktop/TritonMusic/src/mainwindow.cpp
  uic:ui_mainwindow.h

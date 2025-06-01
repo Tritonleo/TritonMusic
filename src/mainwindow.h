@@ -50,8 +50,6 @@ private slots:
     void on_addFileBtn_clicked();
     void on_playBtn_clicked();
     void on_listWidget_doubleClicked(const QModelIndex &index);
-    //void on_listWidget_itemChanged(QListWidgetItem *item);
-    //void on_listWidget_itemSelectionChanged();
     void on_clearBtn_clicked();
     void on_removeBtn_clicked();
     void on_soundBtn_clicked();

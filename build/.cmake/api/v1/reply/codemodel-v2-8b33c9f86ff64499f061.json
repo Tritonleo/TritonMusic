@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-0020552ac9bfd752fd66.json",
+					"jsonFile" : "directory-.-Debug-e968a2deb67d9deb9db6.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TritonMusic::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TritonMusic-Debug-095df4e74f06a4041096.json",
+					"jsonFile" : "target-TritonMusic-Debug-18e209b8fcc027ba2a04.json",
 					"name" : "TritonMusic",
 					"projectIndex" : 0
 				},

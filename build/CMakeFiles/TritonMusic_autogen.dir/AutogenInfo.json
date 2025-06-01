@@ -410,7 +410,8 @@
 	[
 		[ "C:/Users/25764/Desktop/TritonMusic/src/lyricpage.cpp", "MU", null ],
 		[ "C:/Users/25764/Desktop/TritonMusic/src/main.cpp", "MU", null ],
-		[ "C:/Users/25764/Desktop/TritonMusic/src/mainwindow.cpp", "MU", null ]
+		[ "C:/Users/25764/Desktop/TritonMusic/src/mainwindow.cpp", "MU", null ],
+		[ "C:/Users/25764/Desktop/TritonMusic/src/musicInfo.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

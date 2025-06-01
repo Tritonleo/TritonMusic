@@ -57,7 +57,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 30,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
@@ -81,13 +81,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 52,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 37,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
@@ -337,7 +337,7 @@
 			{
 				"command" : 11,
 				"file" : 1,
-				"line" : 45,
+				"line" : 46,
 				"parent" : 0
 			}
 		]
@@ -477,18 +477,19 @@
 				0,
 				1,
 				2,
-				5
+				5,
+				7
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "TritonMusic_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "TritonMusic_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "TritonMusic_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "TritonMusic::@6890427a1f51a3e7e1df",
@@ -621,7 +622,8 @@
 				0,
 				1,
 				2,
-				5
+				5,
+				7
 			]
 		},
 		{
@@ -630,7 +632,7 @@
 			[
 				3,
 				6,
-				7
+				8
 			]
 		},
 		{
@@ -638,14 +640,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				8
+				9
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				9
+				10
 			]
 		}
 	],
@@ -690,6 +692,12 @@
 			"backtrace" : 4,
 			"path" : "src/lyricpage.h",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "src/musicInfo.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,

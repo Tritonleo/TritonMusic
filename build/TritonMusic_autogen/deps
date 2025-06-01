@@ -9,6 +9,7 @@ TritonMusic_autogen/timestamp: \
 	C:/Users/25764/Desktop/TritonMusic/src/main.cpp \
 	C:/Users/25764/Desktop/TritonMusic/src/mainwindow.cpp \
 	C:/Users/25764/Desktop/TritonMusic/src/mainwindow.h \
+	C:/Users/25764/Desktop/TritonMusic/src/musicInfo.cpp \
 	C:/msys64/mingw64/lib/cmake/taglib/taglib-config-version.cmake \
 	C:/msys64/mingw64/lib/cmake/taglib/taglib-config.cmake \
 	C:/msys64/mingw64/lib/cmake/taglib/taglib-targets-noconfig.cmake \

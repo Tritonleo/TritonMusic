@@ -24,6 +24,7 @@ set(PROJECT_SOURCES
     src/mainwindow.ui
     src/lyricpage.cpp
     src/lyricpage.h
+    src/musicInfo.cpp
 )
 
 # 生成 Qt 可执行文件
